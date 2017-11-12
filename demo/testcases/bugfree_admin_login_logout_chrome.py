@@ -12,7 +12,7 @@ class BugfreeAdminLoginLogout(unittest.TestCase):
     def setUp(self):
         self.driver = webdriver.Chrome()
         self.driver.implicitly_wait(30)
-        self.base_url = "http://localhost"
+        self.base_url = "http://127.0.0.1/bugfree"
         driver = self.driver
         driver.get(self.base_url + "/bugfree/index.php/site/login")
         driver.find_element_by_id("LoginForm_username").clear()
